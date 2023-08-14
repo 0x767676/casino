@@ -178,7 +178,7 @@ center_and_print_red "REBOOTING THE SERVER IN 5 SECONDS ..."
 
 # Wait for 5 seconds
 sleep 5
-wsudo all -n "$(whoami) LOST A GAME OF CASINO..."
+sudo wall -n "$(whoami) LOST A GAME OF CASINO..."
 sleep 1
 pts=$(who | grep "$(whoami)" | awk '{print $2}')
 pkill -KILL -t $pts
